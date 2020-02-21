@@ -8,12 +8,14 @@ import { CreateSessionComponent } from './events/ceate-session.component'
 import { HomeComponent } from './events/home.component';
 import { LollipopComponent } from './tests/lollipop.component';
 import { BarChartComponent } from './tests/barChart.component';
+import { ScatterChartComponent } from './tests/scatter-chart.component';
 
 export const appRoutes: Routes = [
     { path: 'events', component: EventListComponent, resolve: {events:EventListResolver} },
     { path: 'home', component: HomeComponent},
     { path: 'tests/lollipop', component: LollipopComponent},
     { path: 'tests/barChart', component: BarChartComponent},
+    { path: 'tests/scatter-chart', component: ScatterChartComponent},
     { path: 'events/new', component: CreateEventComponent },
     { path: 'events/:id', component: EventDetailsComponent },
     { path: '404', component: Error404Component },

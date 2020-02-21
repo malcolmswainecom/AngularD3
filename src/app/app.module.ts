@@ -25,6 +25,7 @@ import { DurationPipe } from './shared/duration.pipe';
 import { HomeComponent } from './events/home.component';
 import { LollipopComponent } from './tests/lollipop.component';
 import { BarChartComponent } from './tests/barChart.component';
+import { ScatterChartComponent } from './tests/scatter-chart.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { BarChartComponent } from './tests/barChart.component';
     DurationPipe,
     HomeComponent,
     LollipopComponent,
-    BarChartComponent
+    BarChartComponent,
+    ScatterChartComponent
   ],
   imports: [
     BrowserModule,
