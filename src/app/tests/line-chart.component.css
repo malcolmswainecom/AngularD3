@@ -1,0 +1,6 @@
+/deep/ svg {border: 1px solid #ccc;}
+/deep/ text { font-family: \'Avenir\', sans-serif;font-size: 10px;fill: white;}
+/deep/ text > tspan { font-size: 20px;}
+/deep/ .axis .domain {stroke: #bbb;}
+/deep/ .axis .tick line {stroke: #bbb;stroke-width: 0.5;stroke-dasharray: 4, 2;}
+/deep/ .axes-labels text {font-size: 0.6em;fill: #444;}

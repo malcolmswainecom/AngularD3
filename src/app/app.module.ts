@@ -26,6 +26,7 @@ import { HomeComponent } from './events/home.component';
 import { LollipopComponent } from './tests/lollipop.component';
 import { BarChartComponent } from './tests/barChart.component';
 import { ScatterChartComponent } from './tests/scatter-chart.component';
+import { LineChartComponent } from './tests/line-chart.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { ScatterChartComponent } from './tests/scatter-chart.component';
     HomeComponent,
     LollipopComponent,
     BarChartComponent,
-    ScatterChartComponent
+    ScatterChartComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,

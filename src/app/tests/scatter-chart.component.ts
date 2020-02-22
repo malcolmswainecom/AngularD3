@@ -5,25 +5,25 @@ import * as d3 from 'd3'
   selector: 'scatter-chart',
   templateUrl: './scatter-chart.component.html',
   styles: [`
-  svg {
+  /deep/ svg {
     border: 1px solid #ccc;
   }
   
-  text {
+  /deep/ text {
     font-family: 'Avenir', sans-serif;
   }
   
-  .axis .domain {
+  /deep/ .axis .domain {
     stroke: #bbb;
   }
   
-  .axis .tick line {
+  /deep/ .axis .tick line {
     stroke: #bbb;
     stroke-width: 0.5;
     stroke-dasharray: 4, 2;
   }
   
-  .axes-labels text {
+  /deep/.axes-labels text {
     font-size: 0.6em;
     fill: #444;
   }
@@ -88,7 +88,7 @@ export class ScatterChartComponent implements OnInit {
         .domain(xExtent as any[])
         .range([0, width]);
 
-      let yExtent = d3.extent(scatterData, d => (d as any).revenue);
+      let yExtent = d3.extent(scatterData as any[], d => (d as any).revenue);
        // .map((d, i) => (i === 0 ? d * 0.1 : d * 1.1));
        (yExtent as any[]).map((d, i) => (i === 0 ? d * 0.95 : d * 1.05));
 
@@ -159,7 +159,7 @@ export class ScatterChartComponent implements OnInit {
         .append('g')
         .attr('class', 'scatter-points')
         .selectAll('.scatter')
-        .data(scatterData)
+        .data(scatterData as any[])
         .enter()
         .append('circle')
         .attr('class', 'scatter')

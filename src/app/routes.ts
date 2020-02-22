@@ -9,6 +9,7 @@ import { HomeComponent } from './events/home.component';
 import { LollipopComponent } from './tests/lollipop.component';
 import { BarChartComponent } from './tests/barChart.component';
 import { ScatterChartComponent } from './tests/scatter-chart.component';
+import { LineChartComponent } from './tests/line-chart.component';
 
 export const appRoutes: Routes = [
     { path: 'events', component: EventListComponent, resolve: {events:EventListResolver} },
@@ -16,6 +17,7 @@ export const appRoutes: Routes = [
     { path: 'tests/lollipop', component: LollipopComponent},
     { path: 'tests/barChart', component: BarChartComponent},
     { path: 'tests/scatter-chart', component: ScatterChartComponent},
+    { path: 'tests/line-chart', component: LineChartComponent},
     { path: 'events/new', component: CreateEventComponent },
     { path: 'events/:id', component: EventDetailsComponent },
     { path: '404', component: Error404Component },
