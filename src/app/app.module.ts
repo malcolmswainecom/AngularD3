@@ -30,7 +30,7 @@ import { LineChartComponent } from './tests/line-chart.component';
 import { DataUpdateComponent } from './tests/data-update.component';
 import { BasicTransitionsComponent } from './tests/basic-transitions.component';
 import { TransitionalBarChartComponent } from './tests/transitional-bar-chart.component';
-
+import { ToolTipBarChartComponent } from './tests/tool-tip-bar-chart.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +52,8 @@ import { TransitionalBarChartComponent } from './tests/transitional-bar-chart.co
     LineChartComponent,
     DataUpdateComponent,
     BasicTransitionsComponent,
-    TransitionalBarChartComponent
+    TransitionalBarChartComponent,
+    ToolTipBarChartComponent
   ],
   imports: [
     BrowserModule,

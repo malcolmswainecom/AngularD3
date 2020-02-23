@@ -13,6 +13,7 @@ import { LineChartComponent } from './tests/line-chart.component';
 import { DataUpdateComponent } from './tests/data-update.component';
 import { BasicTransitionsComponent } from './tests/basic-transitions.component';
 import { TransitionalBarChartComponent } from './tests/transitional-bar-chart.component';
+import { ToolTipBarChartComponent } from './tests/tool-tip-bar-chart.component';
 
 export const appRoutes: Routes = [
     
@@ -24,6 +25,7 @@ export const appRoutes: Routes = [
     { path: 'tests/data-update', component: DataUpdateComponent},
     { path: 'tests/basic-transitions', component: BasicTransitionsComponent},
     { path: 'tests/transitional-bar-chart', component: TransitionalBarChartComponent},
+    { path: 'tests/tool-tip-bar-chart', component: ToolTipBarChartComponent},
     { path: '404', component: Error404Component },
     { path: '', redirectTo: "tests/barChart", pathMatch: 'full' },
 
