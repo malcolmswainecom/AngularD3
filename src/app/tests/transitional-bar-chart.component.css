@@ -1,0 +1,26 @@
+/deep/ svg {border: 1px solid #ccc;}
+/deep/ text { font-family: \'Avenir\', sans-serif;font-size: 10px;fill: white;}
+/deep/ text > tspan { font-size: 20px;}
+/deep/ .axis .domain {stroke: #bbb;}
+/deep/ .axis .tick line {stroke: #bbb;stroke-width: 0.5;stroke-dasharray: 4, 2;}
+/deep/ .axes-labels text {font-size: 0.6em;fill: #444;}
+
+  
+/deep/  button {
+    outline: none;
+    color: #555;
+    border-color: #eee;
+    background: #fefefe;
+    padding: 3px 10px;
+    font-family: Avenir;
+    transition: all 200ms;
+    cursor: pointer;
+  }
+  
+  /deep/  button:hover {
+    background: #f7f7f7;
+  }
+  
+  /deep/ button:focus {
+    background: #e7e7e7;
+  }

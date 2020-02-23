@@ -27,6 +27,10 @@ import { LollipopComponent } from './tests/lollipop.component';
 import { BarChartComponent } from './tests/barChart.component';
 import { ScatterChartComponent } from './tests/scatter-chart.component';
 import { LineChartComponent } from './tests/line-chart.component';
+import { DataUpdateComponent } from './tests/data-update.component';
+import { BasicTransitionsComponent } from './tests/basic-transitions.component';
+import { TransitionalBarChartComponent } from './tests/transitional-bar-chart.component';
+
 
 @NgModule({
   declarations: [
@@ -45,7 +49,10 @@ import { LineChartComponent } from './tests/line-chart.component';
     LollipopComponent,
     BarChartComponent,
     ScatterChartComponent,
-    LineChartComponent
+    LineChartComponent,
+    DataUpdateComponent,
+    BasicTransitionsComponent,
+    TransitionalBarChartComponent
   ],
   imports: [
     BrowserModule,

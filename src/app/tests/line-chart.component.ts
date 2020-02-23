@@ -59,11 +59,11 @@ export class LineChartComponent {
             .axisBottom(xScale)
             .tickSizeOuter(0);
 
-        const xAxisDraw = svg
-            .append('g')
-            .attr('class', 'x axis')
-            .attr('transform', `translate(0, ${height})`)
-            .call(xAxis)
+        // const xAxisDraw = svg
+        //     .append('g')
+        //     .attr('class', 'x axis')
+        //     .attr('transform', `translate(0, ${height})`)
+        //     .call(xAxis)
 
          // Draw y axis.
         const yAxis = d3
@@ -73,10 +73,10 @@ export class LineChartComponent {
             .tickSizeInner(-width)
             .tickSizeOuter(0);
 
-        const yAxisDraw = svg
-            .append('g')
-            .attr('class', 'y axis')
-            .call(yAxis)
+        // const yAxisDraw = svg
+        //     .append('g')
+        //     .attr('class', 'y axis')
+        //     .call(yAxis)
 
          // Draw header.
       const header = svg

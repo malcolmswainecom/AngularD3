@@ -1,0 +1,28 @@
+/deep/  h3 {
+    font-weight: 100;
+    color: #555;
+    margin: 0.4rem 0;
+  }
+  
+  /deep/ svg {
+    border: 1px solid #ccc;
+  }
+  
+  /deep/ button {
+    outline: none;
+    color: #555;
+    border-color: #eee;
+    background: #fefefe;
+    padding: 3px 10px;
+    font-family: Avenir;
+    transition: all 200ms;
+  }
+  
+  /deep/ button:hover {
+    background: #f7f7f7;
+  }
+  
+  /deep/ button:focus {
+    background: #e7e7e7;
+  }
+  

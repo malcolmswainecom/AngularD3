@@ -10,18 +10,21 @@ import { LollipopComponent } from './tests/lollipop.component';
 import { BarChartComponent } from './tests/barChart.component';
 import { ScatterChartComponent } from './tests/scatter-chart.component';
 import { LineChartComponent } from './tests/line-chart.component';
+import { DataUpdateComponent } from './tests/data-update.component';
+import { BasicTransitionsComponent } from './tests/basic-transitions.component';
+import { TransitionalBarChartComponent } from './tests/transitional-bar-chart.component';
 
 export const appRoutes: Routes = [
-    { path: 'events', component: EventListComponent, resolve: {events:EventListResolver} },
+    
     { path: 'home', component: HomeComponent},
     { path: 'tests/lollipop', component: LollipopComponent},
     { path: 'tests/barChart', component: BarChartComponent},
     { path: 'tests/scatter-chart', component: ScatterChartComponent},
     { path: 'tests/line-chart', component: LineChartComponent},
-    { path: 'events/new', component: CreateEventComponent },
-    { path: 'events/:id', component: EventDetailsComponent },
+    { path: 'tests/data-update', component: DataUpdateComponent},
+    { path: 'tests/basic-transitions', component: BasicTransitionsComponent},
+    { path: 'tests/transitional-bar-chart', component: TransitionalBarChartComponent},
     { path: '404', component: Error404Component },
     { path: '', redirectTo: "tests/barChart", pathMatch: 'full' },
-    { path: 'user', loadChildren: './user/user.module#UserModule'},
-    { path: 'events/session/new', component:  CreateSessionComponent}
+
 ]
